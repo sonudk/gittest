@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<meta charset="utf-8" />
+
+<script src="libraries/p5.js"></script>
+
+<!--
+Based on:
+https://github.com/shiffman/Video-Lesson-Materials/tree/master/10_minute_challenges/Mitosis_p5.js
+https://www.youtube.com/watch?v=WpUnYfVmKdA&feature=youtu.be&t=5508
+-->
+
+<script>
+var cells = [];
+function setup() {
+  createCanvas(896, 504);
+  for (i = 0; i < 300; i++) {
+    cells.push(new Cell());
+  }
+}
+function draw() {
+ background(250);
+ for (var j = 0; j < cells.length; j++) {
+   cells[j].move();
+   cells[j].show();
+ }
+ textSize(20);
+ fill(0);
+ text('Click on Cells', 30, 30);
+}
+function mousePressed() {
+  for (var k = cells.length-1; k >= 0; k--) {
+    if (cells[k].clicked(mouseX, mouseY)) {
+      cells.push(cells[k].mitosis());
+      cells.push(cells[k].mitosis());
+      cells.splice(k, 1);
+    }
+  }
+}
+function Cell(pos, r, c) {
+  if (pos) {
+    this.pos = pos.copy();
+  } else {
+    this.pos = createVector(random(100, 796), random(100, 404));
+  }
+  this.r = 60;
+  this.c = c || color(random(0, 127), random(0, 127), random(0, 127), 60);
+  stroke(random(0, 127), random(0, 127), random(0, 127), 5);
+  strokeWeight(7);
+  this.clicked = function(x, y) {
+    var d = dist(this.pos.x, this.pos.y, x, y);
+    if (d < this.r) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  this.mitosis = function() {
+    var cell = new Cell(this.pos, this.r*0.8, this.c);
+    return cell;
+  }
+  this.move = function() {
+    this.pos.x = this.pos.x + random(-6, 6);
+    this.pos.y = this.pos.y + random(-3, 3);
+  }
+  this.show = function() {
+    fill(this.c);
+    ellipse(this.pos.x, this.pos.y, this.r, this.r)
+  }
+}
+</script>
+
+</head><body> </body></html>
