@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by anonymous (http://jsbin.com/ruqoyageda/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  
+  
+  <title>JS Bin</title>
+<style id="jsbin-css">
+boby{
+  margin:10px;
+  background-color:black;
+
+}
+div{
+  box-shadow:2px 4px 10px bisque;
+  padding:10px
+  font-color:bisque;
+}
+</style>
+</head>
+<body>
+  <div>
+    <h1>This is my Randdom Number Page.</h1>
+  </div>
+<script id="jsbin-javascript">
+// console.log("sdfsd");
+// document.write("sjdifsjdfniasnfjkasd"+"jhdsbcuisd id "+"jskdcsdc sjkdc s"+"sjkcskj csjd");
+
+let arrray = ["wfwerf","dfdfds","dfsdf","dfgdf"];
+var sunil = console.log(arrray.pop());
+console.log(arrray);
+console.log(arrray.shift());
+console.log(arrray);
+
+console.log(arrray.unshift("jsdfnsidnfjks"));
+console.log(arrray);
+console.log(arrray.push("jsdfnsidnfjks"));
+console.log(arrray);
+//this was use of array push pop shift unshift functions those are provided by libraries so we don't need to write code for that
+
+
+//this for javascript page ofor functions so be careful about undefined and null they are diffe
+let score=0;
+let nums =[1,2,3,12,21212,12,1,2];
+for(let i=0;i<8;i++){
+  console.log(score);
+  console.log(nums[i]);
+  score += nums[i];
+  //
+}
+
+console.log(score);
+
+for(var num in nums){
+  console.log(nums[num]);
+}
+var upTo;
+//how to use functions
+function alertMessage(upTo){
+  return Math.random()*upTo;
+  
+}
+document.write(alertMessage(23));
+
+//with assigning variable to function we also can define functions
+let sunil = function(v){
+  var dhaka=Math.random()*v;
+  document.write(dhaka);
+};
+document.write(sunil(122));
+
+
+</script>
+</body>
+</html>
