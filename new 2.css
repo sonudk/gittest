@@ -1,0 +1,58 @@
+body{
+color: bisque;
+font-family: fantasy;
+  background-image: url(https://images.pexels.com/photos/1260289/pexels-photo-1260289.jpeg?auto=compress&cs=tinysrgb&h=350);
+}
+.wrapper{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+  margin-top: 2em;
+
+}
+h2{
+  color:white;
+}
+h2:hover{
+  transition-duration: 2s;
+  transition-property: all;
+  background-color: red;
+  color: black;
+  border-style: groove;
+  border-radius: 1em;
+  border-right: .5em;
+  padding-left: 1em;
+  transform: translate(1em,1em);
+}
+ul{
+  background-color: white;
+  transition-duration: all;
+  transition-duration: 1s;
+}
+ul:hover{
+  background-color: black;
+  border: 3px groove red;
+transition-delay: .1s;
+  paddings: 12px;
+}
+a{
+  border-radius: .2em;
+  background-color: blue;
+  border: dotted;
+
+}
+a:hover{
+  border-radius:5px;
+border: groove;
+background-color: red;
+}
+img:hover{
+  transform-origin: left top;
+  transform: scale(2,1);
+  transform: skewY(25deg);
+  transform: rotate(5deg);
+  transform: translateY(12px);
+  /* transition-delay: 1s;
+  transition-duration: 2s; */
+  transition-timing-function: cubic-bezier(.2,.2,.2,.22);
+}

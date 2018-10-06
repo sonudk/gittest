@@ -1,0 +1,10 @@
+.footer nav section ul li a{
+	-webkit-transition:color;
+	-moz-transition:color;
+	-o-transition:color;
+	transition:color;
+	text-decoration:none;
+}
+.footer nav section ul li a:hover{
+	color:white;
+}

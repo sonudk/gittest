@@ -1,0 +1,79 @@
+title in link
+header
+Definition and Usage
+The <header> element represents a container for introductory content or a set of navigational links.
+
+A <header> element typically contains:
+
+one or more heading elements (<h1> - <h6>)
+logo or icon
+authorship information
+You can have several <header> elements in one document.
+
+Note: A <header> tag cannot be placed within a <footer>, <address> or another <header> element.
+
+
+
+
+nav
+using smae tag for h1 and h3 for same kind of line 
+article
+secton tag
+
+header aside artical and footer are some special words in html that can be used on the place of div command that I was using.
+difference b/w absolute and relative positioning
+try to use .(name of class) (tag) (nested tag) ........so on
+exa:
+.pageHeader h1 a  
+so that other links are not affected from these links styling 
+and if want to make special for one element than use element internal styling
+what is this nav?????/
+
+text-transform:lowercase;
+verticle-align:baseline is good to make them aligned
+
+clear:both;
+what is this section and clear
+
+font sixe transition
+
+
+Definition and Usage
+The <footer> tag defines a footer for a document or section.
+
+A <footer> element should contain information about its containing element.
+
+A <footer> element typically contains:
+
+authorship information
+copyright information
+contact information
+sitemap
+back to top links
+related documents
+You can have several <footer> elements in one document.
+
+\
+
+Definition and Usage
+The <section> tag defines sections in a document, such as chapters, headers, footers, or any other sections of the document.
+
+
+
+
+what is the use of ::after and ::before
+
+
+
+
+ARticle tag::::::Definition and Usage
+The <article> tag specifies independent, self-contained content.
+
+An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+
+Potential sources for the <article> element:
+
+Forum post
+Blog post
+News story
+Comment
